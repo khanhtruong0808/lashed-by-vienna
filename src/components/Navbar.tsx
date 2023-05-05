@@ -7,7 +7,7 @@ import { useState } from "react";
 const navigation = [
   { name: "About", href: "#" },
   { name: "Gallery", href: "#" },
-  { name: "Policy", href: "#" },
+  { name: "Policy", href: "/policy" },
 ];
 
 export const Navbar = () => {
@@ -20,7 +20,7 @@ export const Navbar = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Lashed By Vienna</span>
             <Image
               height={50}
