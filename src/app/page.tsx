@@ -52,7 +52,7 @@ export default function Home() {
                 <h1 className="text-4xl font-bold italic tracking-tight text-emerald-900 sm:text-6xl">
                   Lashed By Vienna
                 </h1>
-                <p className="relative mt-6 text-lg leading-8 text-emerald-700 sm:max-w-md lg:max-w-none">
+                <p className="relative mt-6 text-lg leading-8 text-emerald-800 sm:max-w-md lg:max-w-none">
                   A local lash business based in Sacramento, CA. Vienna is a
                   certified lash technician who specializes in mega and volume
                   lash extensions. She is passionate about making her clients

@@ -101,7 +101,7 @@ export default function PolicyPage() {
                     </Disclosure.Button>
                   </dt>
                   <Disclosure.Panel as="dd" className="mt-2 pr-12">
-                    <p className="text-base leading-7 text-emerald-700">
+                    <p className="text-base leading-7 text-emerald-800">
                       {faq.answer}
                     </p>
                   </Disclosure.Panel>
@@ -141,7 +141,7 @@ export default function PolicyPage() {
                             <h3 className="text-lg font-medium leading-6 text-emerald-900">
                               {lashDescription.title}
                             </h3>
-                            <p className="mt-1 max-w-2xl text-sm text-emerald-700">
+                            <p className="mt-1 max-w-2xl text-sm text-emerald-800">
                               {lashDescription.description}
                             </p>
                           </div>
