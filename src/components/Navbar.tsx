@@ -5,7 +5,7 @@ import { Dialog } from "@headlessui/react";
 import { useState } from "react";
 
 const navigation = [
-  { name: "About", href: "#" },
+  { name: "Lash Menu", href: "/menu" },
   { name: "Gallery", href: "#" },
   { name: "Policy", href: "/policy" },
 ];

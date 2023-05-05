@@ -66,7 +66,7 @@ export default function Home() {
                     Book Now
                   </a>
                   <a
-                    href="#"
+                    href="/menu"
                     className="text-sm font-semibold leading-6 text-emerald-900"
                   >
                     View Lash Menu <span aria-hidden="true">→</span>
@@ -126,8 +126,8 @@ export default function Home() {
                   <div className="relative">
                     <Image
                       unoptimized
-                      height={0}
-                      width={0}
+                      height={100}
+                      width={100}
                       src="/lash-pics/lash-5.png"
                       alt=""
                       className="aspect-[2/3] w-full rounded-xl bg-emerald-900/5 object-cover shadow-lg"
