@@ -67,7 +67,7 @@ export default function Home() {
                   </a>
                   <a
                     href="#"
-                    className="text-sm font-semibold leading-6 text-gray-900"
+                    className="text-sm font-semibold leading-6 text-emerald-900"
                   >
                     View Lash Menu <span aria-hidden="true">→</span>
                   </a>
