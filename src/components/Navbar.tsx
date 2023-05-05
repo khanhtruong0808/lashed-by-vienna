@@ -73,9 +73,9 @@ export const Navbar = () => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
-                height={32}
-                width={32}
-                className="h-8 w-auto"
+                height={50}
+                width={50}
+                className="rounded-full"
                 src="/logo.jpg"
                 alt=""
               />
