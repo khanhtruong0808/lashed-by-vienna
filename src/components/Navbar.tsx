@@ -54,7 +54,7 @@ export const Navbar = () => {
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
-            href="#"
+            href="/book"
             className="text-sm font-semibold leading-6 text-emerald-900"
           >
             Book Appointment <span aria-hidden="true">&rarr;</span>
@@ -104,7 +104,7 @@ export const Navbar = () => {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="/book"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-emerald-900 hover:bg-emerald-100"
                 >
                   Book Appointment
