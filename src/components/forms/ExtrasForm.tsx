@@ -1,4 +1,48 @@
-import { extras } from "@/app/menu/page";
+
+const extras = [
+  {
+    name: "Color",
+    note: "Let me know what color you're interested in so I could confirm with you.",
+    exception: "",
+    price: "$5",
+  },
+  {
+    name: "Full Set Color",
+    note: "",
+    exception: "",
+    price: "$20",
+  },
+  {
+    name: "Wispy/Spikes",
+    note: "",
+    exception: "",
+    price: "$10",
+  },
+  {
+    name: "Removal",
+    note: "If there's a buildup of makeup, bacteria removal required",
+    exception: "$15 with full set",
+    price: "$20",
+  },
+  {
+    name: "Lash Bath",
+    note: "From lash glue or mascara",
+    exception: "",
+    price: "$10",
+  },
+  {
+    name: "Aftercare kit",
+    note: "Includes lash wash, brush, and spoolie",
+    exception: "$10 for refill",
+    price: "$15",
+  },
+  {
+    name: "Foreign Fill",
+    note: "Please check in with me because I have the right to refuse foreign fills",
+    exception: "",
+    price: "$30",
+  },
+];
 export const ExtrasForm = () => {
   return (
     <fieldset>
