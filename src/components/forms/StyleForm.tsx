@@ -4,22 +4,22 @@ const styles = [
   {
     id: 1,
     name: "Classic",
-    description: "Description",
+    description: "Classic lashes is one synthetic lash placed on one natural lash. This will create an everyday natural look.",
   },
   {
     id: 2,
     name: "Light Volume",
-    description: "Description",
+    description: "Light volume are flared out fans on one lash. The lash fan contains 12-17 synthetic lashes and is placed onto one natural lash.",
   },
   {
     id: 3,
     name: "Volume",
-    description: "Description",
+    description: "Volume lashes are flared out fans on one lash. The lash fan contains 12-17 synthetic lashes and is placed onto one natural lash.",
   },
   {
     id: 4,
     name: "Mega Volume",
-    description: "Description",
+    description: "Mega volume lashes are flared out fans on one lash. The lash fan contains 12-17 synthetic lashes and is placed onto one natural lash.",
   },
 ];
 
@@ -110,7 +110,7 @@ export const StyleForm = ({ selectedCategory, style, setStyle }: Props) => {
                       as="span"
                       className="text-emerald-700"
                     >
-                      description
+                      {style.description}
                     </RadioGroup.Description>
                   </span>
                 </span>
