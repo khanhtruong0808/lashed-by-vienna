@@ -5,33 +5,69 @@ const styles = [
     id: 1,
     name: "Classic",
     description: "Description",
-    price: "$40",
   },
   {
     id: 2,
     name: "Light Volume",
     description: "Description",
-    price: "$40",
   },
   {
     id: 3,
     name: "Volume",
     description: "Description",
-    price: "$40",
   },
   {
     id: 4,
     name: "Mega Volume",
     description: "Description",
-    price: "$40",
   },
 ];
+
+const miniPrices = new Map([
+  ["Classic", "$20"],
+  ["Light Volume", "$20"],
+  ["Volume", "$30"],
+  ["Mega Volume", "$40"],
+]);
+
+const twoWeekPrices = new Map([
+  ["Classic", "$45"],
+  ["Light Volume", "$50"],
+  ["Volume", "$65"],
+  ["Mega Volume", "$90"],
+]);
+
+const threeWeekPrices = new Map([
+  ["Classic", "$65"],
+  ["Light Volume", "$70"],
+  ["Volume", "$85"],
+  ["Mega Volume", "$110"],
+]);
+
+const setPrices = new Map([
+  ["Classic", "$80"],
+  ["Light Volume", "$85"],
+  ["Volume", "$100"],
+  ["Mega Volume", "$125"],
+]);
+
+const priceSet = new Map([
+  ["Mini-Fill", miniPrices],
+  ["Fill (2 Weeks)", twoWeekPrices],
+  ["Fill (3 Weeks)", threeWeekPrices],
+  ["Full Set", setPrices],
+]);
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 interface Props {
+  selectedCategory: {
+    id: number;
+    name: string;
+    description: string;
+  };
   style: {
     name: string;
     price: string;
@@ -39,7 +75,9 @@ interface Props {
   setStyle: (arg0: any) => void;
 }
 
-export const StyleForm = ({ style, setStyle }: any) => {
+export const StyleForm = ({ selectedCategory, style, setStyle }: Props) => {
+  const prices = priceSet.get(selectedCategory.name);
+
   return (
     <RadioGroup value={style} onChange={setStyle}>
       <RadioGroup.Label className="text-base font-semibold leading-6 text-emerald-900">
@@ -81,7 +119,7 @@ export const StyleForm = ({ style, setStyle }: any) => {
                   className="mt-2 flex text-sm sm:ml-4 sm:mt-0 sm:flex-col sm:text-right"
                 >
                   <span className="font-medium text-emerald-900">
-                    {style.price}
+                    {prices?.get(style.name)}
                   </span>
                 </RadioGroup.Description>
                 <span

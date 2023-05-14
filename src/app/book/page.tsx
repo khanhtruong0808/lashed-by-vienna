@@ -28,7 +28,13 @@ export default function BookPage() {
             before moving forward.
           </p>
           <CategoryForm category={category} setCategory={setCategory} />
-          {category && <StyleForm style={style} setStyle={setStyle} />}
+          {category && (
+            <StyleForm
+              selectedCategory={category}
+              style={style}
+              setStyle={setStyle}
+            />
+          )}
           {category && style && (
             <>
               <ExtrasForm />

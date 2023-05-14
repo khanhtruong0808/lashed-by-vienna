@@ -18,7 +18,7 @@ const categories = [
   },
   {
     id: 3,
-    name: "Fill (3 weeks)",
+    name: "Fill (3 Weeks)",
     price: "$65 - $110",
   },
   {

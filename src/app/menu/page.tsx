@@ -29,7 +29,7 @@ const menu = [
   },
 ];
 
-const extras = [
+export const extras = [
   {
     name: "Color",
     note: "Let me know what color you're interested in so I could confirm with you.",
