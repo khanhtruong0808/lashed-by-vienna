@@ -55,18 +55,18 @@ export const ExtrasForm = () => {
         <div key={extra.name} className="relative flex items-start">
           <div className="flex h-6 items-center">
             <input
-              id="comments"
-              aria-describedby="comments-description"
-              name="comments"
+              id={`${extra.name}`}
+              aria-describedby={`${extra.name}-description`}
+              name={`${extra.name}`}
               type="checkbox"
               className="h-4 w-4 rounded border-emerald-300 text-emerald-600 focus:ring-emerald-500"
             />
           </div>
           <div className="ml-3 text-sm leading-6">
-            <label htmlFor="comments" className="font-medium text-emerald-900">
+            <label htmlFor={`${extra.name}`} className="font-medium text-emerald-900">
               {extra.name} ({extra.price}{extra.exception && `, or ${extra.exception}`})
             </label>
-            <p id="comments-description" className="text-emerald-800">
+            <p id="${extra.name}-description" className="text-emerald-800">
               {extra.note}
             </p>
           </div>
